@@ -65,3 +65,14 @@ const books = [
 ];
 
 
+function filterByGenre(books,genre){
+  let filteredBooks = books.filter((book) =>{
+    return book.genre === genre;
+  });
+  console.log(filteredBooks);
+}
+
+
+console.log(filterByGenre(books,"mystery"));
+
+
